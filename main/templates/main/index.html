@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock css %}
+{% block modal_cart %}
+    {% include "includes/cart_button.html" %}
+{% endblock modal_cart %}
+{% block content %}
+    <h1 class="mt-5 pt-5 display-4 fw-bold">
+        Магазин мебели Home<span class="text-white">Style</span>
+    </h1>
+{% endblock content %}
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright © SVB Digital Studio 2026</p>
+        </div>
+    </footer>
+{% endblock footer %}
